@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperatur Konverter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter-card">
+        <div class="icon">🌡️</div>
+
+        <h1>Temperatur<br />Konverter</h1>
+
+        <div class="input-group">
+          <input
+            type="number"
+            id="tempInput"
+            placeholder=""
+            required
+            step="any"
+          />
+          <label for="tempInput">Temperatur eingeben</label>
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-container">
+            <input type="radio" name="conversion" id="unit-c-to-f" checked />
+            <span class="radio-tile">
+              <span class="label">Celsius &rarr; Fahrenheit</span>
+            </span>
+          </label>
+
+          <label class="radio-container">
+            <input type="radio" name="conversion" id="unit-f-to-c" />
+            <span class="radio-tile">
+              <span class="label">Fahrenheit &rarr; Celsius</span>
+            </span>
+          </label>
+        </div>
+
+        <button class="convert-btn" onclick="convertBtn()">Konvertieren</button>
+
+        <div id="result" class="result-display">--</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
